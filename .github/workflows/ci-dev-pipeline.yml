@@ -1,0 +1,16 @@
+name: CI-dev-pipeline
+on:
+  workflow_dispatch:
+    # inputs:
+    #   - BUILDKIT_INLINE_CACHE:
+    #       type: choice
+    #       description: (1)ja, (0)nee
+    #       options:
+    #         - '1'
+    #         - '2'
+    #   - IMAGE_NAME:
+    #   - TAG:
+    #   - OWNER:
+  pull_request:
+    types: closed
+    branches: [main, develop]
